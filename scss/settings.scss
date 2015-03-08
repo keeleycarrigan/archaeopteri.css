@@ -1,0 +1,17 @@
+// Grid Setting Mixins
+$total-columns: 12;
+$column-gutter: 15;
+$row-width: 1000;
+$include-xl-grid-classes: true;
+$opposite-direction: right;
+$default-float: left;
+
+// Button Settings
+$main-btn-height: 50;
+$main-btn-color: #ACE4D5;
+$main-btn-hover: #8ACAD4;
+$main-btn-txt: #0A0410;
+
+$alert-btn-color: #F7055E;
+$alert-btn-hover: darken($alert-btn-color, 10%);
+$alert-btn-txt: #FFF;

@@ -1,0 +1,32 @@
+.btn {
+	width: 100%;
+	@include button-height($main-btn-height, 15);
+	background-color: $main-btn-color;
+	color: $main-btn-txt;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	@include transition(all, 200, linear);
+	
+	&:hover {
+		background-color: $main-btn-hover;
+	}
+
+	&.auto {
+		width: auto;
+		@include rem-calc(padding-left, 30);
+		@include rem-calc(padding-right, 30);
+	}
+}
+
+.alert-btn {
+	@extend .btn;
+	background-color: $alert-btn-color;
+	color: $alert-btn-txt;
+	
+	&:hover {
+		background-color: $alert-btn-hover;
+	}
+}
+

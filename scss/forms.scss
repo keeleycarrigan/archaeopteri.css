@@ -1,0 +1,22 @@
+form {
+	label {
+		width: 100%;
+		font-weight: bold;
+		@include rem-calc(line-height, $main-btn-height);
+		display: block;		
+	}
+
+	input {
+		width: 100%;
+		@include button-height($main-btn-height, 15);
+		@include rem-calc(padding-left, 10);
+		@include rem-calc(padding-right, 10);
+		border: 1px solid $main-btn-color;
+	}
+	
+	&.inline-label {
+		input {
+			@include rem-calc(margin-bottom, 15);
+		}
+	}
+}

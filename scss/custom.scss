@@ -1,0 +1,9 @@
+.row {
+	@include rem-calc(padding-bottom, 20);
+}
+
+form {
+	.row {
+		padding-bottom: 0;
+	}
+}
