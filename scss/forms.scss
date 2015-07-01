@@ -11,6 +11,7 @@ form {
 		@include button-height($main-btn-height, 15);
 		@include rem-calc(padding-left, 10);
 		@include rem-calc(padding-right, 10);
+		@include rem-calc(margin-bottom, 15);
 		border: 1px solid $main-btn-color;
 	}
 	

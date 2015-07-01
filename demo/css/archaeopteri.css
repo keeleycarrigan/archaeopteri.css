@@ -1546,7 +1546,7 @@ body {
   height: 100%;
   width: 100%; }
 
-.btn, .alert-btn, .dropdown label {
+.btn, .alert-btn {
   width: 100%;
   padding: 17.5px 0px;
   padding: 1.09375rem 0rem;
@@ -1554,17 +1554,17 @@ body {
   font-size: 0.9375rem;
   line-height: 15px;
   line-height: 0.9375rem;
-  background-color: #ace4d5;
-  color: #0a0410;
+  background-color: #ACE4D5;
+  color: #0A0410;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear; }
-  .btn:hover, .alert-btn:hover, .dropdown label:hover {
-    background-color: #8acad4; }
-  .btn.auto, .auto.alert-btn, .dropdown label.auto {
+  .btn:hover, .alert-btn:hover {
+    background-color: #8ACAD4; }
+  .btn.auto, .auto.alert-btn {
     width: auto;
     padding-left: 30px;
     padding-left: 1.875rem;
@@ -1572,54 +1572,62 @@ body {
     padding-right: 1.875rem; }
 
 .alert-btn {
-  background-color: #f7055e;
-  color: white; }
+  background-color: #F7055E;
+  color: #FFF; }
   .alert-btn:hover {
     background-color: #c5044b; }
 
-.dropdown {
+.dropdown, .dropdown-slide {
   position: relative; }
-  .dropdown input {
+  .dropdown input, .dropdown-slide input {
     display: none; }
-    .dropdown input:checked ~ .dropdown-list {
+    .dropdown input:checked ~ .dropdown-list, .dropdown-slide input:checked ~ .dropdown-list {
       display: block;
       z-index: 100; }
-    .dropdown input:checked + label {
-      background-color: #8acad4; }
-  .dropdown .dropdown-list {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: #ace4d5;
-    display: none;
-    overflow: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0; }
-    .dropdown .dropdown-list li {
-      list-style: none;
-      border-bottom: 1px solid #f7055e; }
-      .dropdown .dropdown-list li:last-child {
-        border: none; }
-    .dropdown .dropdown-list a {
-      padding: 17.5px 0px;
-      padding: 1.09375rem 0rem;
-      font-size: 15px;
-      font-size: 0.9375rem;
-      line-height: 15px;
-      line-height: 0.9375rem;
-      padding-left: 15px;
-      padding-left: 0.9375rem;
-      padding-right: 15px;
-      padding-right: 0.9375rem;
-      background-color: #ace4d5;
-      color: #0a0410;
-      text-decoration: none;
-      display: block;
-      -webkit-transition: all 200ms linear;
-      transition: all 200ms linear; }
-      .dropdown .dropdown-list a:hover {
-        background-color: #8acad4; }
+    .dropdown input:checked + label, .dropdown-slide input:checked + label {
+      background-color: #8ACAD4; }
+
+.dropdown-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #ACE4D5;
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0; }
+  .dropdown-list li {
+    list-style: none;
+    border-bottom: 1px solid #F7055E; }
+    .dropdown-list li:last-child {
+      border: none; }
+  .dropdown-list a {
+    padding: 17.5px 0px;
+    padding: 1.09375rem 0rem;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 15px;
+    line-height: 0.9375rem;
+    padding-left: 15px;
+    padding-left: 0.9375rem;
+    padding-right: 15px;
+    padding-right: 0.9375rem;
+    background-color: #ACE4D5;
+    color: #0A0410;
+    text-decoration: none;
+    display: block;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear; }
+    .dropdown-list a:hover {
+      background-color: #8ACAD4; }
+
+.dropdown-slide input:checked ~ .dropdown-list {
+  max-height: 1000%; }
+.dropdown-slide .dropdown-list {
+  max-height: 0;
+  display: block;
+  transition: max-height 300ms linear; }
 
 form label {
   width: 100%;
@@ -1639,7 +1647,9 @@ form input {
   padding-left: 0.625rem;
   padding-right: 10px;
   padding-right: 0.625rem;
-  border: 1px solid #ace4d5; }
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+  border: 1px solid #ACE4D5; }
 form.inline-label input {
   margin-bottom: 15px;
   margin-bottom: 0.9375rem; }
@@ -1650,3 +1660,5 @@ form.inline-label input {
 
 form .row {
   padding-bottom: 0; }
+
+/*# sourceMappingURL=archaeopteri.css.map */
